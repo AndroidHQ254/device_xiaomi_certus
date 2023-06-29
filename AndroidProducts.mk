@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_certus.mk
+    $(LOCAL_DIR)/lineage_x610.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_certus-user \
-    nad_certus-userdebug \
-    nad_certus-eng
+    lineage_x610-user \
+    lineage_x610-userdebug \
+    lineage_x610-eng

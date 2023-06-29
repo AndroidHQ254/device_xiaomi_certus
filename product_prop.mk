@@ -44,7 +44,7 @@ PRODUCT_PRODUCT_PROPERTIES  += \
 
 # Screen Density
 PRODUCT_PRODUCT_PROPERTIES  += \
-    ro.sf.lcd_density=295
+    ro.sf.lcd_density=480
 
 # Surfaceflinger
 PRODUCT_PRODUCT_PROPERTIES  += \

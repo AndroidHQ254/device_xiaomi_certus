@@ -1,44 +1,20 @@
-Unified device tree for Xiaomi Redmi 6/6A (Cereus/Cactus)
-============== 
-  
-Redmi 6 (Cereus)  
-========  
+Device Tree for Infinix Note 6 (x610)
+================================================================
+
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Octa-core 2.0 GHz Cortex-A53
-Chipset | Mediatek MT6762 Helio P22
-GPU     | 650MHz PowerVR GE8320
-Memory  | 3/4 GB
-Shipped Android Version | 8.1 with MIUI 9
-Storage | 32/64 GB
-MicroSD | Up to 256 GB
-Battery | 3000 mAh (non-removable)
-Dimensions | 147.5 x 71.5 x 8.3 mm
-Display | 720 x 1440 pixels, 5.45" IPS LCD, 18:9 ratio (~295 PPI density)
-Rear Camera  | 12.0 MP + 5 MP, LED flash
-Front Camera | 5.0 MP
-Release Month | June 2018
- 
-![Xiaomi Redmi 6](https://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-6.jpg "Xiaomi Redmi 6")
-  
-  
-Redmi 6A (Cactus)  
-========  
-Basic   | Spec Sheet
--------:|:-------------------------
-CPU     | Quad-core 2.0 GHz Cortex-A53
-Chipset | Mediatek MT6762m Helio A22
-GPU     | 650MHz PowerVR GE8320
-Memory  | 2/3 GB
-Shipped Android Version | 8.1 (Oreo MR1) with MIUI 9
-Storage | 16/32 GB (eMMC)
-MicroSD | Up to 256 GB (Hybrid)
-Battery | 3000 mAh (non-removable)
-Dimensions | 147.5 x 71.5 x 8.3 mm
-Display | 720 x 1440 pixels, 5.45" IPS LCD, 18:9 ratio (~295 PPI density)
-Rear Camera  | 13.0 MP, LED flash
-Front Camera | 5.0 MP
-Release Month | June 2018
+CPU     | Octa-core (4x2.3 GHz Cortex-A53 & 4x1.8 GHz Cortex-A53)
+CHIPSET | Mediatek MT6765 Helio P35 (12nm)
+GPU     | PowerVR GE8320
+Memory  | 4 GB
+Shipped Android Version | Android 9.0 (Pie)
+Storage | 64 GB
+Card slot | microSDXC (dedicated slot)
+Battery | Li-Po 4000 mAh (non-removable)
+Dimensions | 154.2 x 74.5 x 7.7 mm (6.07 x 2.93 x 0.30 in)
+Display | 1080 x 2160 pixels, 6.01 inches AMOLED
+Rear Camera  | 16 MP (wide) + 8 MP (ultrawide) + 2 MP (depth), Dual-LED flash
+Front Camera | 16 MP
+Release Date | June 2019
 
-![Xiaomi Redmi 6a](https://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-6a-2.jpg "Xiaomi Redmi 6a")    
-
+![Infinix Note 6](https://fdn2.gsmarena.com/vv/pics/infinix/infinix-note-6-x610-3.jpg "Infinix Note 6")    
