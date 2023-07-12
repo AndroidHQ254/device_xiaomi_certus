@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="id.my.wulan17.mtkims_telephony"
+    package="id.my.dennismurimi.mtkims_telephony"
     android:versionCode="1"
     android:versionName="1.0">
     <application

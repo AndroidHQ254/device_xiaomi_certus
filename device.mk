@@ -16,7 +16,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -24,18 +24,18 @@ PRODUCT_PACKAGES += \
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1440
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_WIDTH := 1080
 
 # GMS
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-transsion-infinix-rev1
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 29
-PRODUCT_EXTRA_VNDK_VERSIONS := 29
+PRODUCT_TARGET_VNDK_VERSION := 28
+PRODUCT_EXTRA_VNDK_VERSIONS := 28
 
 # APNs
 PRODUCT_COPY_FILES += \
@@ -101,7 +101,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml \
     $(LOCAL_PATH)/permissions/privapp-permissions-imsinit.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-imsinit.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions-certus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-certus.xml
+    $(LOCAL_PATH)/permissions/privapp-permissions-x610.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-x610.xml
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -111,10 +111,7 @@ PRODUCT_PACKAGES += \
 
 # RROs
 PRODUCT_PACKAGES += \
-    RoundedCornerFW \
-    RoundedCornerSysUI \
-    BatteryHealthOverlay \
-    FpsInfoOverlay
+    ScreenRecordOverlay
 
 # Symbols
 PRODUCT_PACKAGES += \
@@ -134,10 +131,14 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_PACKAGES += \
     ImsInit
 
+# Trust HAL
+PRODUCT_PACKAGES += \
+    lineage.trust@1.0-service
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay
 
 # Call proprietary blob setup
-$(call inherit-product-if-exists, vendor/xiaomi/mt6765-common/mt6765-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/infinix/x610/x610-vendor.mk)
